@@ -29,24 +29,36 @@
         private void InitializeComponent()
         {
             btnShowInfo = new Button();
+            listBoxBooks = new ListBox();
             SuspendLayout();
             // 
             // btnShowInfo
             // 
-            btnShowInfo.Location = new Point(355, 219);
+            btnShowInfo.Location = new Point(86, 71);
+            btnShowInfo.Margin = new Padding(3, 4, 3, 4);
             btnShowInfo.Name = "btnShowInfo";
-            btnShowInfo.Size = new Size(75, 23);
+            btnShowInfo.Size = new Size(124, 44);
             btnShowInfo.TabIndex = 0;
             btnShowInfo.Text = "Show Info";
             btnShowInfo.UseVisualStyleBackColor = true;
             btnShowInfo.Click += btnShowInfo_Click;
             // 
+            // listBoxBooks
+            // 
+            listBoxBooks.FormattingEnabled = true;
+            listBoxBooks.Location = new Point(290, 71);
+            listBoxBooks.Name = "listBoxBooks";
+            listBoxBooks.Size = new Size(543, 464);
+            listBoxBooks.TabIndex = 1;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(listBoxBooks);
             Controls.Add(btnShowInfo);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -55,5 +67,6 @@
         #endregion
 
         private Button btnShowInfo;
+        private ListBox listBoxBooks;
     }
 }
